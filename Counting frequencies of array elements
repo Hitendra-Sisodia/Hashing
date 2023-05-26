@@ -1,0 +1,19 @@
+// counting frequency of array elements
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    vector<int> arr = {1,2,1,3,2,1,3};
+    int maxsize = 12;
+    vector<int> hash(maxsize + 1);
+    for(int i = 0 ; i < arr.size() ; i++){
+        hash[arr[i]]++;
+    }
+    int num = 0;
+    cout<<"Enter number to count the frequency: ";
+    cin>>num;
+    cout<<hash[num];
+}
+
+// TC = O(N)
+// SC = O(N)
